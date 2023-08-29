@@ -86,11 +86,11 @@ Moves the "pen" to a new location without drawing anything. This sets the starti
 
 Draws a straight line from the current position to the specified (`x`, `y`) point.
 
-### `path.curveTo(cp1x, cp1y, cp2x, cp2y, x, y)`
+### `path.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)`
 
 Draws a cubic Bezier curve from the current position to the specified (`x`, `y`) point using (`cp1x`, `cp1y`) as the control point for the start of the curve and (`cp2x`, `cp2y`) as the control point for the end of the curve.
 
-### `path.qcurveTo(cpx, cpy, x, y)`
+### `path.quadraticCurveTo(cpx, cpy, x, y)`
 
 Draws a quadratic Bezier curve from the current position to the specified (`x`, `y`) point using (`cpx`, `cpy`) as the control point.
 
