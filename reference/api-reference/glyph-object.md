@@ -85,27 +85,13 @@ This documentation for [fontkit](https://github.com/foliojs/fontkit) is created 
 
 ## **Methods**:
 
-### `glyph.getPath(x, y, fontSize)`
+### `glyph._getPath(x, y, fontSize)`
 
 Returns a `Path` object for the glyph at the specified position (`x`, `y`) and size (`fontSize`). The `fontSize` parameter is optional and defaults to the font's units per em.
 
-### `glyph.getMetrics()`
+### `glyph._getMetrics()`
 
 Retrieves metrics associated with the glyph, including the advance width, side bearings, and bounding box.
-
-## **Advanced Properties (for specific font formats)**:
-
-For TrueType fonts:
-
-### `glyph.numberOfContours`
-
-The number of contours in the glyph, which can be useful for some operations.
-
-For CFF (Compact Font Format) fonts:
-
-### `glyph.privateDict`
-
-The private dictionary of the glyph, if available. CFF fonts can have specific settings and properties for individual glyphs stored in a private dictionary.
 
 ## **Render a Glyph's Path to SVG**:
 
