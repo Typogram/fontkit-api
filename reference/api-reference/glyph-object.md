@@ -85,13 +85,54 @@ This documentation for [fontkit](https://github.com/foliojs/fontkit) is created 
 
 ## **Methods**:
 
-### `glyph._getPath(x, y, fontSize)`
+### `glyph_getPath()`:
 
-Returns a `Path` object for the glyph at the specified position (`x`, `y`) and size (`fontSize`). The `fontSize` parameter is optional and defaults to the font's units per em.
+* **Description**: (Internal) Retrieves the path data for the glyph, which can be used for rendering or other operations.
+* **Returns**: A `Path` object representing the glyph's outlines.
 
-### `glyph._getMetrics()`
+### `glyph_getMetrics()`:
 
-Retrieves metrics associated with the glyph, including the advance width, side bearings, and bounding box.
+* **Description**: (Internal) Retrieves the metrics for the glyph, which define its layout characteristics.
+* **Returns**: Metrics data.
+
+### `glyph_getContours()`:
+
+* **Description**: (Internal) Retrieves the contours of the glyph, which define the glyph's shape.
+* **Returns**: An array of contours.
+
+### `glyph_getCBox()`:
+
+* **Description**: (Internal) Retrieves the control bounding box of the glyph. This box encompasses all control points of the glyph's path.
+* **Returns**: Object
+
+### `glyph_getPhantomPoints()`:
+
+* **Description**: (Internal) Retrieves the phantom points for the glyph, which are often used for hinting and layout purposes.
+* **Returns**: An array of phantom points.
+
+### `glyph_parseGlyphCoord()`:
+
+* **Description**: (Internal) Parses specific coordinates from the glyph data, often used in the decoding process.
+* **Parameters**: Typically involves parameters related to font data or encoding specifics.
+* **Returns**: Parsed coordinates (usually Numbers or Objects).
+
+### `glyph_decode()`:
+
+* **Description**: (Internal) Decodes the glyph data, which can be either simple or composite, depending on the glyph type.
+* **Parameters**: Typically data or stream references from the font file.
+* **Returns**: Decoded glyph data.
+
+### `glyph_decodeSimple()`:
+
+* **Description**: (Internal) Decodes the data for a simple glyph type.
+* **Parameters**: Typically data or stream references from the font file.
+* **Returns**: Decoded simple glyph data.
+
+### `glyph_decodeComposite()`:
+
+* **Description**: (Internal) Decodes the data for a composite glyph type.
+* **Parameters**: Typically data or stream references from the font file.
+* **Returns**: Decoded composite glyph data.
 
 ## **Render a Glyph's Path to SVG**:
 
