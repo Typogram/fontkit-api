@@ -13,33 +13,75 @@ This documentation for [fontkit](https://github.com/foliojs/fontkit) is created 
 
 ## **Properties**:
 
-### `glyph.id`
+### `glyph.id`:
 
-The unique identifier of the glyph in the font.
+* **Description**: A unique identifier for the glyph within its font.
+* **Type**: Number
 
-### `glyph.path`
+### `glyph.path`:
 
-A `Path` object representing the glyph's outline. This can be used to render the glyph or for other operations that involve the glyph's shape.
+* **Description**: The path object for the glyph, representing the glyph's outlines and can be rendered or used for various operations.
+* **Type**: `Path` object
 
-### `glyph.bbox`
+### `glyph.name`:
 
-The bounding box of the glyph, representing the rectangle that encloses the glyph's outline. It's an object with properties: `minX`, `minY`, `maxX`, and `maxY`.
+* **Description**: The name of the glyph, which can be a standard glyph name or a custom one defined by the font creator.
+* **Type**: String
 
-### `glyph.cbox`
+### `glyph.type`:
 
-The control bounding box of the glyph. It's similar to the bounding box but includes bezier control points.
+* **Description**: The type of glyph, such as 'simple' or 'composite'.
+* **Type**: String
 
-### `glyph.advanceWidth`
+### `glyph.codePoints`:
 
-The advance width of the glyph, which is the amount the pen position should be moved after drawing the glyph.
+* **Description**: An array of Unicode code points that the glyph represents. This can be more than one for ligatures and other combined forms.
+* **Type**: Array of Numbers
 
-### `glyph.advanceHeight`
+### `glyph.advanceWidth`:
 
-The advance height of the glyph, indicating how much the pen position should move vertically after drawing the glyph (common in vertical writing modes).
+* **Description**: The advance width of the glyph, representing the space the glyph occupies horizontally.
+* **Type**: Number
 
-### `glyph.codePoints`
+### `glyph.advanceHeight`:
 
-An array of Unicode code points that the glyph represents.
+* **Description**: The advance height of the glyph, representing the vertical space the glyph occupies. Relevant for vertical text layouts.
+* **Type**: Number
+
+### `glyph.bbox`:
+
+* **Description**: The bounding box of the glyph, encompassing the entire glyph and providing `minX`, `minY`, `maxX`, and `maxY` properties.
+* **Type**: Object
+
+### `glyph.cbox`:
+
+* **Description**: The control bounding box of the glyph, which encompasses all control points of the glyph's path. Useful for some precise layout operations.
+* **Type**: Object
+
+### `glyph.isMark`:
+
+* **Description**: Indicates if the glyph is a mark glyph, which is used for combining characters in many scripts.
+* **Type**: Boolean
+
+### `glyph.isLigature`:
+
+* **Description**: Indicates if the glyph is a ligature, representing multiple characters combined into a single glyph.
+* **Type**: Boolean
+
+### `glyph.ligatureCaretPositions`:
+
+* **Description**: An array indicating positions within the glyph where carets should be drawn when the glyph is selected. Relevant for ligatures where multiple characters combine into a single glyph.
+* **Type**: Array of Numbers
+
+### `glyph._font`:
+
+* **Description**: (Internal) Reference to the font object the glyph belongs to.
+* **Type**: `Font` object
+
+### `glyph._metrics`:
+
+* **Description**: (Internal) Metrics data for the glyph. Typically used internally by Fontkit.
+* **Type**: Object
 
 ## **Methods**:
 
