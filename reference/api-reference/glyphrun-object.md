@@ -13,51 +13,51 @@ This documentation for [fontkit](https://github.com/foliojs/fontkit) is created 
 
 ## **Properties**:
 
-### `glyphs`:
+### `glyphRun.glyphs`:
 
 * **Description**: An array of `Glyph` objects representing the individual glyphs in the run.
 * **Type**: Array of `Glyph` objects
 
-### `positions`:
+### `glyphRun.positions`:
 
 * **Description**: An array of position objects, where each position corresponds to the `Glyph` at the same index in the `glyphs` array. Each position object typically contains `x` and `y` offsets and an advance width and height.
 * **Type**: Array of Position Objects. Each position object has properties:
-  * xAdvance: The amount to move the pen in the x-direction after drawing the glyph.
-  * yAdvance: The amount to move the pen in the y-direction after drawing the glyph.
-  * xOffset: The x offset to apply when drawing this glyph.
-  * yOffset: The y offset to apply when drawing this glyph.
+  * `xAdvance`: The amount to move the pen in the x-direction after drawing the glyph.
+  * `yAdvance`: The amount to move the pen in the y-direction after drawing the glyph.
+  * `xOffset`: The x offset to apply when drawing this glyph.
+  * `yOffset`: The y offset to apply when drawing this glyph.
 
-### `script`:
-
-* **Description**: The script (or writing system) used for this run of text, as determined by the shaping engine.
-* **Type**: String
-
-### `language`:
-
-* **Description**: The language tag for this run of text, which can affect shaping in some scripts.
-* **Type**: String
-
-### `direction`:
-
-* **Description**: The text direction for this run. Common values include 'ltr' (left-to-right) and 'rtl' (right-to-left).
-* **Type**: String
-
-### `features`:
+### `glyphRun.features`:
 
 * **Description**: An array of OpenType feature tags applied to this run, which can affect the final set of glyphs and their positions.
 * **Type**: Array of Strings
 
-### `advanceWidth`:
+### `glyphRun.script`:
+
+* **Description**: The script (or writing system) used for this run of text, as determined by the shaping engine.
+* **Type**: String
+
+### `glyphRun.language`:
+
+* **Description**: The language tag for this run of text, which can affect shaping in some scripts.
+* **Type**: String
+
+### `glyphRun.direction`:
+
+* **Description**: The text direction for this run. Common values include 'ltr' (left-to-right) and 'rtl' (right-to-left).
+* **Type**: String
+
+### `glyphRun.advanceWidth`:
 
 * **Description**: The total advance width of the glyph run. This is the sum of the horizontal advances of all the glyphs in the run, and it represents the width that the glyph run would occupy if rendered.
 * **Type**: Number
 
-### `advanceHeight`:
+### `glyphRun.advanceHeight`:
 
 * **Description**: The total advance height of the glyph run. This is particularly relevant for vertical text layouts.
 * **Type**: Number
 
-### `bbox`:
+### `glyphRun.bbox`:
 
 * **Description**: The bounding box of the glyph run. It encompasses all the glyphs in the run and provides `minX`, `minY`, `maxX`, and `maxY` properties.
 * **Type**: Object
