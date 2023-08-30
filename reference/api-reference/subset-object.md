@@ -13,6 +13,28 @@ Fontkit can perform font subsetting, i.e. the process of creating a new font fro
 * **Description**: Creates a new subset from the font.
 * **Returns**: A new `Subset` object.
 
+## Properties
+
+### `subset.font`:
+
+* **Type**: `Font`
+* **Description**: The original font from which the subset is derived. It provides a reference to the main font object, allowing access to all its properties, methods, and associated data.
+
+### `subset.glyphEncoder`:
+
+* **Type**: Object or Encoder
+* **Description**: The encoder responsible for encoding the glyphs when creating the subset. This will often handle the conversion of glyph data into the required format for the subset.
+
+### `subset.glyphs`:
+
+* **Type**: Array of `Glyph` objects
+* **Description**: An array containing all the glyphs that are included in the subset. Each glyph is an instance of the `Glyph` object, encapsulating its individual properties, metrics, and path data.
+
+### `subset.mapping`:
+
+* **Type**: Object
+* **Description**: Represents the mapping between the glyphs in the original font and their corresponding entries in the subset. This ensures that when text is rendered using the subset, the correct glyphs are displayed.
+
 ## Methods:
 
 ### `subset.includeGlyph(glyph)`
