@@ -100,12 +100,12 @@ The `Glyph` object in Fontkit represents an individual glyph in the font, which 
 * **Description**: (Internal) Retrieves the control bounding box of the glyph. This box encompasses all control points of the glyph's path.
 * **Returns**: Object
 
-### `glyph_getPhantomPoints()`:
+### `glyph_getPhantomPoints(glyph)`:
 
 * **Description**: (Internal) Retrieves the phantom points for the glyph, which are often used for hinting and layout purposes.
 * **Returns**: An array of phantom points.
 
-### `glyph_parseGlyphCoord()`:
+### `glyph_parseGlyphCoord(stream, prev, short, same)`:
 
 * **Description**: (Internal) Parses specific coordinates from the glyph data, often used in the decoding process.
 * **Parameters**: Typically involves parameters related to font data or encoding specifics.
@@ -117,13 +117,13 @@ The `Glyph` object in Fontkit represents an individual glyph in the font, which 
 * **Parameters**: Typically data or stream references from the font file.
 * **Returns**: Decoded glyph data.
 
-### `glyph_decodeSimple()`:
+### `glyph_decodeSimple(glyph, stream):`
 
 * **Description**: (Internal) Decodes the data for a simple glyph type.
 * **Parameters**: Typically data or stream references from the font file.
 * **Returns**: Decoded simple glyph data.
 
-### `glyph_decodeComposite()`:
+### `glyph_decodeComposite(glyph, stream, offset = 0):`
 
 * **Description**: (Internal) Decodes the data for a composite glyph type.
 * **Parameters**: Typically data or stream references from the font file.
