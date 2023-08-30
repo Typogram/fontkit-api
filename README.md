@@ -16,32 +16,32 @@ Feeling like an eager beaver? Jump in to the quick start docs and get making you
 
 Dive a little deeper and start exploring our API reference to get an idea of everything that's possible with the API:
 
-{% content-ref url="reference/api-reference/" %}
-[api-reference](reference/api-reference/)
+{% content-ref url="reference/api-reference-index.md" %}
+[api-reference-index.md](reference/api-reference-index.md)
 {% endcontent-ref %}
 
 ***
 
-{% content-ref url="reference/api-reference/fontkit-object.md" %}
-[fontkit-object.md](reference/api-reference/fontkit-object.md)
+{% content-ref url="reference/fontkit-object.md" %}
+[fontkit-object.md](reference/fontkit-object.md)
 {% endcontent-ref %}
 
-{% content-ref url="reference/api-reference/font-object.md" %}
-[font-object.md](reference/api-reference/font-object.md)
+{% content-ref url="reference/font-object.md" %}
+[font-object.md](reference/font-object.md)
 {% endcontent-ref %}
 
-{% content-ref url="reference/api-reference/glyphrun-object.md" %}
-[glyphrun-object.md](reference/api-reference/glyphrun-object.md)
+{% content-ref url="reference/glyphrun-object.md" %}
+[glyphrun-object.md](reference/glyphrun-object.md)
 {% endcontent-ref %}
 
-{% content-ref url="reference/api-reference/glyph-object.md" %}
-[glyph-object.md](reference/api-reference/glyph-object.md)
+{% content-ref url="reference/glyph-object.md" %}
+[glyph-object.md](reference/glyph-object.md)
 {% endcontent-ref %}
 
-{% content-ref url="reference/api-reference/path-object.md" %}
-[path-object.md](reference/api-reference/path-object.md)
+{% content-ref url="reference/path-object.md" %}
+[path-object.md](reference/path-object.md)
 {% endcontent-ref %}
 
-{% content-ref url="reference/api-reference/subset-object.md" %}
-[subset-object.md](reference/api-reference/subset-object.md)
+{% content-ref url="reference/subset-object.md" %}
+[subset-object.md](reference/subset-object.md)
 {% endcontent-ref %}
