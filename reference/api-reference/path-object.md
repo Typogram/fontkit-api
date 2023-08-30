@@ -1,14 +1,10 @@
----
-description: >-
-  The `Path` object in Fontkit represents the outline of a glyph. You can use it
-  to render the glyph on a canvas, SVG, or any other graphic surface.
----
-
 # Path Object
 
 {% hint style="info" %}
-This documentation for [fontkit](https://github.com/foliojs/fontkit) is created and provided by the [Typogram](https://typogram.co/) team. It's a third-party documentation intended to delve deeper into the fontkit API. For the most accurate information, refer to [fontkit’s official documentation](https://github.com/foliojs/fontkit#readme).
+This documentation for [fontkit](https://github.com/foliojs/fontkit) is created and provided by the [Typogram](https://typogram.co/) team. It’s a third-party documentation intended to delve deeper into the fontkit API. For the most accurate information, refer to [fontkit’s official documentation](https://github.com/foliojs/fontkit#readme).
 {% endhint %}
+
+The `Path` object in Fontkit represents the outline of a glyph. You can use it to render the glyph on a canvas, SVG, or any other graphic surface.
 
 ## **Methods**:
 
