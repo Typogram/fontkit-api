@@ -1,15 +1,10 @@
----
-description: >-
-  The `GlyphRun` object in Fontkit represents a sequence of glyphs and their
-  associated positions. When you layout a string using the `font.layout()`
-  method, it returns a `GlyphRun` object.
----
-
 # GlyphRun Object
 
 {% hint style="info" %}
-This documentation for [fontkit](https://github.com/foliojs/fontkit) is created and provided by the [Typogram](https://typogram.co/) team. It's a third-party documentation intended to delve deeper into the fontkit API. For the most accurate information, refer to [fontkit’s official documentation](https://github.com/foliojs/fontkit#readme).
+This documentation for [fontkit](https://github.com/foliojs/fontkit) is created and provided by the [Typogram](https://typogram.co/) team. It’s a third-party documentation intended to delve deeper into the fontkit API. For the most accurate information, refer to [fontkit’s official documentation](https://github.com/foliojs/fontkit#readme).
 {% endhint %}
+
+The `GlyphRun` object in Fontkit represents a sequence of glyphs and their associated positions. When you layout a string using the `font.layout()` method, it returns a `GlyphRun` object.
 
 ## **Properties**:
 
