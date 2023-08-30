@@ -148,45 +148,105 @@ The Font object is central to Fontkit. It represents a font in your system or a 
 
 ## **Methods**:
 
-### `font.layout(text, features, script, language)`
+### `font.createSubset()`:
 
-This is used to lay out a string of text, returning a `GlyphRun` object. The `features` parameter is optional and can be used to turn on or off OpenType features. The `script` and `language` parameters can be used to set the script and language for shaping.
+* **Description**: Creates a `Subset` object, allowing you to create a new font containing only specified glyphs.
+* **Returns**: `Subset` object for further operations.
 
-### `font.glyphForCodePoint(codePoint)`
+### `font.getAvailableFeatures()`:
 
-Returns a `Glyph` object for a given Unicode code point.
+* **Description**: Lists the OpenType layout features available in the font.
+* **Returns**: Array of available feature tags.
 
-### `font.hasGlyphForCodePoint(codePoint)`
+### `font.getFont()`:
 
-Checks if the font has a glyph for the given Unicode code point.
+* **Description**: If the font file contains multiple fonts, retrieves a specific one.
+* **Parameters**: Index or specific criteria for font selection.
+* **Returns**: `Font` object.
 
-### `font.glyphsForString(string)`
+### `font.getGlyph()`:
 
-Returns an array of `Glyph` objects for a given string.
+* **Description**: Retrieves a glyph by its ID.
+* **Parameters**: Glyph ID.
+* **Returns**: Corresponding `Glyph` object.
 
-### `font.namedGlyphs(name)`
+### `font.getVariation(variation)`:
 
-Returns an array of named glyphs for a given name.
+* **Description**: Returns a new Font object for the given variation.
+* **Parameters**: Variation criteria or name.
+* **Returns**: Variation data.
 
-### `font.getAvailableFeatures()`
+### `font.glyphForCodePoint(codePoint)`:
 
-Lists the OpenType layout features available in the font.
+* **Description**: Returns a `Glyph` object for a given Unicode code point.
+* **Parameters**: Unicode code point.
+* **Returns**: Corresponding `Glyph` object.
 
-## **Advanced Typography with OpenType**:
+### `font.glyphsForString(string)`:
 
-OpenType fonts can include an array of typographic features that affect the layout of text or that substitute alternate glyphs for characters.
+* **Description**: Returns an array of `Glyph` objects for a given string.
+* **Parameters**: A string of characters.
+* **Returns**: Array of `Glyph` objects.
 
-### `font.variationAxes`
+### `font.hasGlyphForCodePoint(codePoint)`:
 
-If the font is a variable font, this returns an array of variation axes.
+* **Description**: Checks if the font has a glyph for the given Unicode code point.
+* **Parameters**: Unicode code point.
+* **Returns**: Boolean indicating presence of the glyph.
 
-### `font.namedVariations`
+### `font.layout(text, features, script, language)`:
 
-If the font is a variable font, this returns an array of named variations.
+* **Description**: This is used to lay out a string of text, returning a `GlyphRun` object. The `features` parameter is optional and can be used to turn on or off OpenType features. The `script` and `language` parameters can be used to set the script and language for shaping.
+* **Parameters**: A string of characters, and potentially additional layout parameters.
+* **Returns**: `GlyphRun` object.
 
-### `font.getVariation(variation)`
+### `font.getName()`:
 
-Returns a new `Font` object for the given variation.
+* **Description**: Retrieves the human-readable name for a specific name ID in the font.
+* **Parameters**: Name ID.
+* **Returns**: String representing the name.
+
+### `font.setDefaultLanguage()`:
+
+* **Description**: Sets the default language for the font, affecting layout operations.
+* **Parameters**: Language tag.
+* **Returns**: Void (changes are applied to the `Font` object).
+
+### `font.stringsForGlyph()`:
+
+* **Description**: Retrieves strings that map to a specific glyph.
+* **Parameters**: Glyph ID or `Glyph` object.
+* **Returns**: Array of strings.
+
+### `font._decodeDirectory()`:
+
+* **Description**: (Internal) Decodes the directory structure of the font, which is a key part of its binary data.
+* **Parameters**: Typically involves references or offsets from the font file.
+* **Returns**: Decoded directory structure.
+
+### `font._decodeTable()`:
+
+* **Description**: (Internal) Decodes a specific table from the font's binary data.
+* **Parameters**: Table references or names from the font file.
+* **Returns**: Decoded table data.
+
+### `font._getBaseGlyph()`:
+
+* **Description**: (Internal) Retrieves the base glyph for a particular character or code point.
+* **Parameters**: Usually a character or code point.
+* **Returns**: Corresponding base `Glyph` object.
+
+### `font._getTable()`:
+
+* **Description**: (Internal) Fetches a specific table from the font.
+* **Parameters**: Table name or reference.
+* **Returns**: Table data.
+
+### `font._getTableStream()`:
+
+* **Description**: (Internal) Retrieves a stream for reading a specific table from the font's binary data.
+* **Parameters**: Table name or reference.
+* **Returns**: Data stream for the specified table.
 
 ## **Layout a String and Access Glyphs**:
 
