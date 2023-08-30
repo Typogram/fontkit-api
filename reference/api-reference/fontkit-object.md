@@ -1,15 +1,10 @@
----
-description: >-
-  The main `fontkit` object is the entry point to the library and provides
-  methods for opening and reading font files. Here's a detailed look at the
-  `fontkit` object's methods and properties:
----
-
 # Fontkit Object
 
 {% hint style="info" %}
-This documentation for [fontkit](https://github.com/foliojs/fontkit) is created and provided by the [Typogram](https://typogram.co/) team. It's a third-party documentation intended to delve deeper into the fontkit API. For the most accurate information, refer to [fontkit’s official documentation](https://github.com/foliojs/fontkit#readme).
+This documentation for [fontkit](https://github.com/foliojs/fontkit) is created and provided by the [Typogram](https://typogram.co/) team. It’s a third-party documentation intended to delve deeper into the fontkit API. For the most accurate information, refer to [fontkit’s official documentation](https://github.com/foliojs/fontkit#readme).
 {% endhint %}
+
+The main `fontkit` object is the entry point to the library and provides methods for opening and reading font files. Here's a detailed look at the `fontkit` object's methods and properties:
 
 ## **Methods**:
 
