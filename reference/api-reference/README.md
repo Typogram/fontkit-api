@@ -55,8 +55,8 @@ This documentation for [fontkit](https://github.com/foliojs/fontkit) is created 
 
 * `path.moveTo(x, y)` Moves the pen to a new location.
 * `path.lineTo(x, y)` Draws a straight line to a new location.
-* `path.curveTo(cp1x, cp1y, cp2x, cp2y, x, y)` Draws a cubic bezier curve.
-* `path.qcurveTo(cpx, cpy, x, y)` Draws a quadratic bezier curve.
+* `path.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y)` Draws a cubic bezier curve.
+* `path.quadraticCurveTo(cpx, cpy, x, y)` Draws a quadratic bezier curve.
 * `path.closePath()` Closes the current path.
 * `path.bbox` Returns the bounding box of the path.
 
