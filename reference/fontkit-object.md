@@ -32,7 +32,7 @@ The main `fontkit` object is the entry point to the library and provides methods
 
 ## **Properties**:
 
-As of my last update in September 2021, the primary interactions with the `fontkit` object are through the methods listed above. There aren't specific notable properties directly on the `fontkit` object itself; most of the functionality and properties you'd interact with are on the objects it returns (like the `Font` object).
+The primary interactions with the `fontkit` object are through the methods listed above. There aren't specific notable properties directly on the `fontkit` object itself; most of the functionality and properties you'd interact with are on the objects it returns (like the `Font` object).
 
 ## **Supported Font Formats**:
 
