@@ -6,6 +6,20 @@ This documentation for [fontkit](https://github.com/foliojs/fontkit) is created 
 
 The `Path` object in Fontkit represents the outline of a glyph. You can use it to render the glyph on a canvas, SVG, or any other graphic surface.
 
+## **Properties**:
+
+### `path.commands`
+
+An array of path commands. Each command is an object with a `type` property, which can be 'moveTo', 'lineTo', 'curveTo', 'qcurveTo', or 'closePath', and the corresponding x and y coordinates (or control points for curves).
+
+### `path.bbox`
+
+The bounding box of the path, which is the rectangle that encloses the path's outline. This object contains properties: `minX`, `minY`, `maxX`, and `maxY`.
+
+### `path.cbox`
+
+The control bounding box of the path, which is similar to the bounding box but includes Bezier control points.
+
 ## **Methods**:
 
 ### `path.rotate(angle)`
@@ -101,17 +115,3 @@ Converts the path to an SVG path data string, which can be used to render the pa
 ### `path.toFunction()`
 
 Converts the path to a JavaScript function with an API similar to the Canvas 2D context. This can be used for custom rendering.
-
-## **Properties**:
-
-### `path.commands`
-
-An array of path commands. Each command is an object with a `type` property, which can be 'moveTo', 'lineTo', 'curveTo', 'qcurveTo', or 'closePath', and the corresponding x and y coordinates (or control points for curves).
-
-### `path.bbox`
-
-The bounding box of the path, which is the rectangle that encloses the path's outline. This object contains properties: `minX`, `minY`, `maxX`, and `maxY`.
-
-### `path.cbox`
-
-The control bounding box of the path, which is similar to the bounding box but includes Bezier control points.
