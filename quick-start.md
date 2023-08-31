@@ -20,11 +20,11 @@ npm install fontkit
 import * as fontkit from 'fontkit';
 
 async function loadFont(url) {
-    const response = await fetch(url);
-    const arrayBuffer = await response.arrayBuffer();
-    const buf = new Uint8Array(arrayBuffer);
-    const font = fontkit.create(buf);
-    console.log(font)
+  const response = await fetch(url);
+  const arrayBuffer = await response.arrayBuffer();
+  const buf = new Uint8Array(arrayBuffer);
+  const font = fontkit.create(buf);
+  console.log(font)
 }
 ```
 {% endtab %}
