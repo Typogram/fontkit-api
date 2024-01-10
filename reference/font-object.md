@@ -189,7 +189,7 @@ The Font object is central to Fontkit. It represents a font in your system or a 
 let currentVariation = {
     "wght": 400
 };
-let fkFont = fkFont.getVariation(currentVariation);
+fkFont = fkFont.getVariation(currentVariation);
 ```
 {% endcode %}
 
