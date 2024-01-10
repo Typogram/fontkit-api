@@ -176,6 +176,23 @@ The Font object is central to Fontkit. It represents a font in your system or a 
 * **Parameters**: Variation criteria or name.
 * **Returns**: Variation data.
 
+### `font.getVariation(variation)`:
+
+* **Description:** Returns a new Font object for the given variation. This method is used to obtain a specific variation of the font based on the provided variation criteria.
+* **Parameters:** `variation` (Object) - An object specifying the variation criteria. The format of this object includes key-value pairs representing the variation axes. For example, `{ "wght": 400 }` sets the weight of the font to 400.
+* **Returns:** Fontkit `Font` Object - A new font object that represents the specified variation of the original font.
+
+**Example:**
+
+{% code fullWidth="false" %}
+```javascript
+let currentVariation = {
+    "wght": 400
+};
+let fkFont = fkFont.getVariation(currentVariation);
+```
+{% endcode %}
+
 ### `font.glyphForCodePoint(codePoint)`:
 
 * **Description**: Returns a `Glyph` object for a given Unicode code point.
