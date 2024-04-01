@@ -12,7 +12,3 @@
 * [Glyph Object](reference/glyph-object.md)
 * [Path Object](reference/path-object.md)
 * [Subset Object](reference/subset-object.md)
-
-## Group 1
-
-* [paperjs-round-corners](group-1/paperjs-round-corners.md)
